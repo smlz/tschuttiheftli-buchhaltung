@@ -112,7 +112,7 @@ li {
   text-align: center;
   height: 100px;
   vertical-align: middle;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 li > div {
   margin: 1px;

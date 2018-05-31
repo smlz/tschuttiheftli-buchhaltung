@@ -40,7 +40,7 @@ export default {
         },
         {
             "number": 10,
-            "name": "Elena Filatyeva & Miroslav Filatyev"
+            "name": "Elena Filatyeva & Miro Filatyev"
         },
         {
             "number": 11,
@@ -494,7 +494,7 @@ export default {
         },
         {
             "number": 120,
-            "name": "Reza Ghoochannejhad"
+            "name": "Reza Ghoochan\u00adnejhad"
         }
     ],
     "Frankreich": [
@@ -830,7 +830,7 @@ export default {
         },
         {
             "number": 201,
-            "name": "J\u00f3hann Berg Gudmundsson"
+            "name": "J\u00f3hann Berg Gudmunds\u00adson"
         },
         {
             "number": 202,
@@ -1182,7 +1182,7 @@ export default {
         },
         {
             "number": 287,
-            "name": "Adenor Leonardo Bacchi (\u00abTite\u00bb)"
+            "name": "Adenor Leonardo Bacchi"
         },
         {
             "number": 288,
@@ -1194,7 +1194,7 @@ export default {
         },
         {
             "number": 290,
-            "name": "Marcos Ao\u00e1s Corr\u00eaa (\u00abMarquinhos\u00bb)"
+            "name": "Marcos Ao\u00e1s Corr\u00eaa"
         },
         {
             "number": 291,
@@ -1914,7 +1914,7 @@ export default {
         },
         {
             "number": 464,
-            "name": "Jakub B\u0142aszczykowski"
+            "name": "Jakub B\u0142aszczy\u00adkowski"
         },
         {
             "number": 465,

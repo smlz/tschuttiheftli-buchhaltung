@@ -1,7 +1,7 @@
 {
-  "name": "tschuttiheftli-buchhaltung",
+  "name": "tschuttiheftlibuchhaltung",
   "version": "0.1.0",
-  "description": "Tschuttiheftli-Buchhaltung",
+  "description": "Tschuttiheftlibuchhaltung",
   "author": "Marco Schmalz <marco@schess.ch>",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
-    "deploy": "npm run build && echo -n tschuttiheftli.smlz.ch > dist/CNAME && gh-pages -d dist"
+    "deploy": "npm run build && echo -n tschuttiheftlibuchhaltung.smlz.ch > dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {
     "bulma": "^0.7.1",

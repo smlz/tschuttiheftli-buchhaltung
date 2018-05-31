@@ -14,7 +14,7 @@
     <div id="navMenu" class="navbar-menu" :class="{'is-active': navIsActive}">
       <div class="navbar-start">
         <router-link to="/" class="navbar-item" exact-active-class="is-active">
-          Tschuttiheftli-Buchhaltung
+          Tschuttiheftlibuchhaltung
         </router-link>
         <router-link to="/settings" class="navbar-item" exact-active-class="is-active">
           <span class="bd-emoji">⚙️</span> &nbsp;Einstellungen

@@ -1,6 +1,6 @@
 <template>
   <div class="dash section">
-    <h1 class="title">Tschuttiheftli-Buchhaltung</h1>
+    <h1 class="title">Tschuttiheftlibuchhaltung</h1>
     <div v-for="(items, category) in values" :key="category" class="is-fullhd">
       <h2 class="subtitle is-4 is-marginless">{{category}}</h2>
       <ul>
@@ -21,12 +21,12 @@ import FirebaseDatabase from '@firebase/database'
 import data from './data'
 
 const db = Firebase.initializeApp({
-  apiKey: "AIzaSyBa5BxfOFirt_kFXXxagW1cYThU0NHvyh8",
-  authDomain: "tschuttiheftli-buchhaltung.firebaseapp.com",
-  databaseURL: "https://tschuttiheftli-buchhaltung.firebaseio.com",
-  projectId: "tschuttiheftli-buchhaltung",
-  storageBucket: "",
-  messagingSenderId: "773506977408"
+  apiKey: "AIzaSyBKQW7pmD9eY89Im_A9zPjkgtyqIT9ogqQ",
+  authDomain: "tschuttiheftlibuchhaltung.firebaseapp.com",
+  databaseURL: "https://tschuttiheftlibuchhaltung.firebaseio.com",
+  projectId: "tschuttiheftlibuchhaltung",
+  storageBucket: "tschuttiheftlibuchhaltung.appspot.com",
+  messagingSenderId: "217301557004"
 }).database()
 
 var storage = undefined

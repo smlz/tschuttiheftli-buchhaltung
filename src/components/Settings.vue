@@ -6,7 +6,7 @@
     <div class="control">
       <input class="input" type="text" placeholder="" v-model="storageId">
    </div>
-   <p class="help">Um auf deine existierende Tschuttiheftli-Buchhaltung zugreifen zu können, hier einfach noch einmal dieselbe Speicher-ID eingeben.</p>
+   <p class="help">Um auf deine existierende Tschuttiheftlibuchhaltung zugreifen zu können, hier einfach noch einmal dieselbe Speicher-ID eingeben.</p>
   </div>
   <div class="field is-grouped">
   <div class="control">

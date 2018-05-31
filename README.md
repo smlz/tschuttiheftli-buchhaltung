@@ -1,8 +1,10 @@
-# tschuttiheftli-buchhaltung
+# tschuttiheftlibuchhaltung
 
-> Tschuttiheftli-Buchhaltung: https://tschuttiheftli.smlz.ch
+> Tschuttiheftlibuchhaltung:
+> https://tschuttiheftlibuchhaltung.smlz.ch
 >
-> Das Objekt der Begierde gibt es hier: https://www.tschuttiheft.li/
+> Das Objekt der Begierde gibt es hier:
+> https://www.tschuttiheft.li/
 
 
 ## Build Setup

@@ -1,7 +1,7 @@
 # tschuttiheftlibuchhaltung
 
 > Tschuttiheftlibuchhaltung:
-> https://tschuttiheftlibuchhaltung.smlz.ch
+> https://www.tschuttiheftlibuchhaltung.ch
 >
 > Das Objekt der Begierde gibt es hier:
 > https://www.tschuttiheft.li/

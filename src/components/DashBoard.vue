@@ -78,7 +78,7 @@ export default {
       })
       storage.on('child_removed', record => {
         let item = this.find_item(record.val())
-        Vue.set(item, 'present', true)
+        Vue.set(item, 'present', false)
         Vue.delete(item, 'key')
       })
     }

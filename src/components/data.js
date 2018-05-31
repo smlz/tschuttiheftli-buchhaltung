@@ -1516,7 +1516,7 @@ export default {
         },
         {
             "number": 368,
-            "name": "Javier Hern\u00e1ndez Balc\u00e1zar (\u00abChicharito\u00bb)"
+            "name": "Javier Hern\u00e1ndez Balc\u00e1zar"
         }
     ],
     "Schweden": [

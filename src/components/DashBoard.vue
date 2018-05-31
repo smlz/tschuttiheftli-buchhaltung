@@ -5,8 +5,10 @@
       <h2 class="subtitle is-4 is-marginless">{{category}}</h2>
       <ul>
         <li v-for="item in items"  :key="item.number" :class="{present: item.present}" @click="toggle(item)">
-          <strong>{{item.number}}</strong><br>
-          <small>{{item.name}}</small>
+          <div>
+            <strong>{{item.number}}</strong><br>
+            <small>{{item.name}}</small>
+          </div>
         </li>
       </ul>
     </div>
@@ -103,7 +105,7 @@ li {
   list-style: none;
   display: inline-block;
   padding: 2px;
-  padding-top: 5px;
+  padding-top: 2px;
   margin: 5px;
   border: solid 2px lightgray;
   width: 100px;
@@ -112,14 +114,24 @@ li {
   vertical-align: middle;
   line-height: 1.3;
 }
-li.present {
-  background-color: lightgreen;
+li > div {
+  margin: 1px;
+  border: white 2px solid;
+    margin: 1px;
+  height:  91px;
+  max-height: 91px;
+}
+li.present, li.present strong, li.present small {
+  background-color:#599f54;
+  border-color: #599f54;
+  color: white;
 }
 li strong {
   font-size: 24pt;
 }
-li small {
-  font-size: 8pt;
+li small, li.present small {
+  font-size: 9pt;
   display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
 }
 </style>

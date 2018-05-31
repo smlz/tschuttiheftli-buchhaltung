@@ -1,4 +1,4 @@
-# tschuttiheftli
+# tschuttiheftli-buchhaltung
 
 > Tschuttiheftli-Buchhaltung: https://tschuttiheftli.smlz.ch
 >

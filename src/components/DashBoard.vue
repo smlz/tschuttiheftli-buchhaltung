@@ -1,5 +1,6 @@
 <template>
   <div class="section">
+    <div class="progressbar"><div :style="{width: progress + '%'}"></div></div>
     <div v-for="(items, category) in values" :key="category" class="is-fullhd">
       <h2 class="subtitle is-3 is-marginless">{{category}}</h2>
       <ul>
@@ -26,6 +27,7 @@ export default {
   data () {
     return {
       values: data,
+      total: Object.keys(data).reduce((a, b) => a + data[b].length, 0),
     }
   },
   methods: {
@@ -44,6 +46,14 @@ export default {
             }
           }
         }
+      }
+    }
+  },
+  computed: {
+    progress() {
+      let current = Object.keys(this.values).reduce((acc, key) =>
+        this.values[key].reduce((sum, i) => i.present ? sum + 1: sum, acc), 0)
+      return current / this.total * 100;
     }
   },
   created () {
@@ -121,5 +131,17 @@ li small, li.present small {
   background-color: rgba(0, 0, 0, 0);
   margin-top: -2px;
 }
+.progressbar {
+  position: fixed;
+  top: calc(3.25rem - 4px);
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 40;
+}
+.progressbar div {
+  height: 4px;
+  background-color: #599f54;
 }
 </style>

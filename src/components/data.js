@@ -2157,38 +2157,6 @@ export default {
         {
             "number": 522,
             "name": "11Freunde"
-        },
-        {
-            "number": 523,
-            "name": "Finalspiele Gruppe A"
-        },
-        {
-            "number": 524,
-            "name": "Finalspiele Gruppe B"
-        },
-        {
-            "number": 525,
-            "name": "Finalspiele Gruppe C"
-        },
-        {
-            "number": 526,
-            "name": "Finalspiele Gruppe D"
-        },
-        {
-            "number": 527,
-            "name": "Finalspiele Gruppe E"
-        },
-        {
-            "number": 528,
-            "name": "Finalspiele Gruppe F"
-        },
-        {
-            "number": 529,
-            "name": "Finalspiele Gruppe G"
-        },
-        {
-            "number": 530,
-            "name": "Finalspiele Gruppe H"
         }
     ]
 };

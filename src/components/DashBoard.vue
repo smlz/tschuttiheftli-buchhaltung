@@ -1,8 +1,7 @@
 <template>
-  <div class="dash section">
-    <h1 class="title">Tschuttiheftlibuchhaltung</h1>
+  <div class="section">
     <div v-for="(items, category) in values" :key="category" class="is-fullhd">
-      <h2 class="subtitle is-4 is-marginless">{{category}}</h2>
+      <h2 class="subtitle is-3 is-marginless">{{category}}</h2>
       <ul>
         <li v-for="item in items"  :key="item.number" :class="{present: item.present}" @click="toggle(item)">
           <div>
@@ -78,37 +77,31 @@ export default {
 </script>
 
 <style scoped>
-.dash {
-  font-family: sans-serif;
-  padding-top: 36px;
-}
 ul {
   padding: 0;
   margin-left: -5px;
   margin-right: -5px;
   margin-bottom: 20px;
-
 }
 li {
   cursor: pointer;
   list-style: none;
   display: inline-block;
-  padding: 2px;
-  padding-top: 2px;
-  margin: 5px;
-  border: solid 2px lightgray;
-  width: 100px;
+  padding: 1px;
+  margin: 4px;
+  border: dashed 2px black;
+  width: 80px;
   text-align: center;
-  height: 100px;
+  height: 80px;
   vertical-align: middle;
-  line-height: 1.25;
+  line-height: 1;
 }
 li > div {
-  margin: 1px;
+  padding: 3px 2px;
   border: white 2px solid;
-    margin: 1px;
-  height:  91px;
-  max-height: 91px;
+  margin: 0px;
+  height:  74px;
+  max-height: 74px;
 }
 li.present, li.present strong, li.present small {
   background-color:#599f54;
@@ -116,11 +109,17 @@ li.present, li.present strong, li.present small {
   color: white;
 }
 li strong {
-  font-size: 24pt;
+  font-size: 22pt;
+  font-family: "Tall Dark And Handsome Condensed";
+  letter-spacing: .1em;
 }
 li small, li.present small {
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 9pt;
+  line-height: 1.05;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0);
+  margin-top: -2px;
+}
 }
 </style>

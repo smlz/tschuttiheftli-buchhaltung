@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar is-light">
+  <nav class="navbar is-black">
     <div class="navbar-brand">
-      <router-link to="/" class="navbar-item">
-        <span class="bd-emoji">⚽</span>
+      <router-link to="/" class="navbar-item"  @click.native="navIsActive = false">
+        tschuttiheftlibuchhaltung
       </router-link>
       <div class="navbar-burger burger" data-target="navMenu" @click="toggleMenu"
           :class="{'is-active': navIsActive}">
@@ -13,11 +13,8 @@
     </div>
     <div id="navMenu" class="navbar-menu" :class="{'is-active': navIsActive}">
       <div class="navbar-start">
-        <router-link to="/" class="navbar-item" exact-active-class="is-active">
-          Tschuttiheftlibuchhaltung
-        </router-link>
-        <router-link to="/settings" class="navbar-item" exact-active-class="is-active">
-          <span class="bd-emoji">⚙️</span> &nbsp;Einstellungen
+        <router-link to="/settings" class="navbar-item" @click.native="navIsActive = false">
+          Einstellungen
         </router-link>
       </div>
     </div>
@@ -39,7 +36,29 @@ export default {
 </script>
 
 <style scoped>
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+}
 a {
-   outline: 0;
+  outline: 0;
+}
+.navbar a {
+  font-family: "Tall Dark And Handsome Condensed";
+  line-height: 0.5;
+  letter-spacing: .06em;
+  margin-top: 0.4rem;
+}
+.navbar-brand a{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navbar-menu a, .navbar-menu a:hover {
+  font-size: 1.6rem;
+  color: #4a4a4a;
 }
 </style>

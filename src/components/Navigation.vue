@@ -30,7 +30,7 @@ export default {
     }
   },
   methods: {
-      toggleMenu () { this.navIsActive = !this.navIsActive}
+    toggleMenu () { this.navIsActive = !this.navIsActive}
   }
 }
 </script>

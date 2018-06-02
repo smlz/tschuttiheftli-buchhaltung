@@ -41,47 +41,47 @@
 
 <script>
 import Vue from 'vue'
-import router from "@/router";
-import db from "@/db"
+import router from '@/router'
+import db from '@/db'
 
 export default {
-  name: "Settings",
+  name: 'Settings',
   data() {
     return {
-      storageId: localStorage.getItem("storageId") || "",
+      storageId: localStorage.getItem('storageId') || '',
       saving: false,
       showModal: false,
-    };
+    }
   },
   methods: {
     save() {
-      this.saving = true;
-      if (this.storageId !== localStorage.getItem("storageId")) {
+      this.saving = true
+      if (this.storageId !== localStorage.getItem('storageId')) {
         db.ref(this.storageId).once('value', storage => {
           if (storage.val() === null) {
-            localStorage.setItem("storageId", this.storageId)
+            localStorage.setItem('storageId', this.storageId)
             Vue.set(this, 'saving', false)
-            router.push("/")
+            router.push('/')
           } else {
             Vue.set(this, 'saving', false)
             Vue.set(this, 'showModal', true)
           }
         })
       } else {
-        router.push("/");
+        router.push('/')
       }
     },
     cancel() {
-      this.storageId = localStorage.getItem("storageId") || "";
-      router.push("/");
+      this.storageId = localStorage.getItem('storageId') || ''
+      router.push('/')
     },
     confirmed() {
       this.showModal = false
-      localStorage.setItem("storageId", this.storageId)
-      router.push("/");
+      localStorage.setItem('storageId', this.storageId)
+      router.push('/')
     }
   }
-};
+}
 </script>
 
 <style scoped>

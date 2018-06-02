@@ -7,7 +7,7 @@
 
 <script>
 import Navigation from '@/components/Navigation'
-import router from "@/router"
+import router from '@/router'
 
 export default {
   name: 'App',
@@ -16,7 +16,7 @@ export default {
   },
   created () {
     if (localStorage.getItem('storageId') === null) {
-      router.push("/init")
+      router.push('/init')
     }
   }
 }

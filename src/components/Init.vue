@@ -18,7 +18,7 @@
 
 <script>
 import db from '@/db'
-import router from "@/router"
+import router from '@/router'
 import generatePassword from 'password-generator'
 
 function findStorageId() {

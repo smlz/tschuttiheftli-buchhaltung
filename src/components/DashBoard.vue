@@ -66,7 +66,7 @@ export default {
     progress() {
       let current = Object.keys(this.values).reduce((acc, key) =>
         this.values[key].reduce((sum, i) => i.present ? sum + 1: sum, acc), 0)
-      return current / this.total * 100;
+      return current / this.total * 100
     },
     done() {
       return this.progress === 100 && !this.doneSaved

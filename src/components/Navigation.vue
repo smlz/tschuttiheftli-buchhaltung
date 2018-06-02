@@ -2,7 +2,7 @@
   <nav class="navbar is-black">
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item"  @click.native="navIsActive = false">
-        tschuttiheftlibuchhaltung
+        <img src="../assets/logo.svg" class="invert">tschuttiheftlibuchhaltung
       </router-link>
       <div class="navbar-burger burger" data-target="navMenu" @click="toggleMenu"
           :class="{'is-active': navIsActive}">
@@ -47,14 +47,23 @@ export default {
 a {
   outline: 0;
 }
+img.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.navbar a img {
+  margin-top: -12px;
+  margin-left: -7px;
+  margin-right: 2px;
+}
 .navbar a {
   font-family: "Tall Dark And Handsome Condensed";
-  line-height: 0.5;
+  line-height: 1;
   letter-spacing: .06em;
-  margin-top: 0.4rem;
+  margin-top: 0.3rem;
 }
 .navbar-brand a{
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 .navbar-menu a, .navbar-menu a:hover {

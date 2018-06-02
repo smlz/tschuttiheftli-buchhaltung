@@ -7,7 +7,7 @@
 
 <script>
 import Navigation from '@/components/Navigation'
-import generatePassword from 'password-generator'
+import router from "@/router"
 
 export default {
   name: 'App',
@@ -16,7 +16,7 @@ export default {
   },
   created () {
     if (localStorage.getItem('storageId') === null) {
-      localStorage.setItem('storageId', generatePassword(8))
+      router.push("/init")
     }
   }
 }

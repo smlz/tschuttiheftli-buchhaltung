@@ -12,6 +12,15 @@
         </li>
       </ul>
     </div>
+    <div class="modal is-active" v-if="done">
+      <div class="modal-background" @click="closeModal"></div>
+      <div class="modal-content">
+        <p class="image">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UDh-DLZbJx0?rel=0&showinfo=0&autoplay=1&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </p>
+      </div>
+      <button class="modal-close is-large" aria-label="close" @click="closeModal"></button>
+    </div>
   </div>
 </template>
 
@@ -28,6 +37,7 @@ export default {
     return {
       values: data,
       total: Object.keys(data).reduce((a, b) => a + data[b].length, 0),
+      doneSaved: JSON.parse(localStorage.getItem('done')) || false,
     }
   },
   methods: {
@@ -46,6 +56,10 @@ export default {
           }
         }
       }
+    },
+    closeModal() {
+      localStorage.setItem('done', 'true')
+      this.doneSaved = true
     }
   },
   computed: {
@@ -53,6 +67,9 @@ export default {
       let current = Object.keys(this.values).reduce((acc, key) =>
         this.values[key].reduce((sum, i) => i.present ? sum + 1: sum, acc), 0)
       return current / this.total * 100;
+    },
+    done() {
+      return this.progress === 100 && !this.doneSaved
     }
   },
   created () {

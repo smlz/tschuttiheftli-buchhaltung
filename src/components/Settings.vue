@@ -27,7 +27,7 @@
         </header>
         <section class="modal-card-body">
           <p>Mit dieser Speicher-ID wurden bereits Tschuttiheftlibuchhaltungsdaten abgespeichert.</p><br>
-          <p>Bist du sicher, dass du sie verwenden möchtest?</p>
+          <p>Bist du sicher, dass du die ID verwenden möchtest?</p>
         </section>
         <footer class="modal-card-foot">
           <button class="button is-black is-hidden-tablet" @click="confirmed">ID verwenden</button>

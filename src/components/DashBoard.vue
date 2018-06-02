@@ -40,10 +40,9 @@ export default {
     },
     find_item (number) {
       for (let category in this.values) {
-          for (let item of data[category]) {
-            if (item.number === number) {
-              return item
-            }
+        for (let item of data[category]) {
+          if (item.number === number) {
+            return item
           }
         }
       }
@@ -62,7 +61,6 @@ export default {
       if (storage !== undefined) {
         storage.off()
       }
-
       storage = db.ref(storageId)
       for (let category in data) {
         for (let item of data[category]) {
@@ -70,7 +68,6 @@ export default {
           delete item.key
         }
       }
-
       storage.on('child_added', record => {
         let item = this.find_item(record.val())
         Vue.set(item, 'present', true)

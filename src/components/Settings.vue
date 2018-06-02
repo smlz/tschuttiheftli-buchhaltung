@@ -30,7 +30,8 @@
           <p>Bist du sicher, dass du sie verwenden möchtest?</p>
         </section>
         <footer class="modal-card-foot">
-          <button class="button is-black" @click="confirmed">Speicher-ID verwenden</button>
+          <button class="button is-black is-hidden-tablet" @click="confirmed">ID verwenden</button>
+          <button class="button is-black is-hidden-mobile" @click="confirmed">Speicher-ID verwenden</button>
           <button class="button is-text" @click="showModal = false">Abbrechen</button>
         </footer>
       </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="modal is-active">
     <div class="modal-background"></div>
-    <div class="modal-content">
+    <div class="modal-content loader">
     <div class="lds-roller">
       <div></div>
       <div></div>
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped>
-.modal-content{
+.modal-content.loader{
   width: 128px;
   height:  128px;
   overflow: hidden;

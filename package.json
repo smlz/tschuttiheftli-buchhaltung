@@ -17,7 +17,6 @@
     "@firebase/app": "^0.3.3",
     "@firebase/database": "^0.3.3",
     "bulma": "^0.7.1",
-    "password-generator": "^2.2.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },

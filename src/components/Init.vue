@@ -19,10 +19,23 @@
 <script>
 import db from '@/db'
 import router from '@/router'
-import generatePassword from 'password-generator'
+
+function generateId(length) {
+  let id = ''
+  const consonants = 'BCDFGHKLMNPRSTVWXZbcdfghklmnpqrstvwxz'
+  const vovels = 'aeiouy'
+  for (var i = 0; i < length; i++) {
+    if (i % 2 === 0) {
+      id += consonants.charAt(Math.floor(Math.random() * consonants.length))
+    } else {
+      id += vovels.charAt(Math.floor(Math.random() * vovels.length))
+    }
+  }
+  return id
+}
 
 function findStorageId() {
-  let id = generatePassword(6)
+  let id = generateId(6)
   db.ref(id).once('value', storage => {
     if (storage.val() === null) {
       localStorage.setItem('storageId', id)

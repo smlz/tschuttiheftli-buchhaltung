@@ -1,6 +1,6 @@
 {
     "name": "tschuttiheftlibuchhaltung",
-    "short_name": "tsbh",
+    "short_name": "tschutti heftli",
     "icons": [
         {
             "src": "/static/favicon-192x192.png",
@@ -13,8 +13,9 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#000000",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/"
+    "start_url": "/",
+    "scope": "/"
 }

@@ -23,11 +23,11 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Speicher-ID existiert bereits</p>
+          <p class="modal-card-title">Speicher-ID existiert</p>
         </header>
         <section class="modal-card-body">
           <p>Mit dieser Speicher-ID wurden bereits Tschuttiheftlibuchhaltungsdaten abgespeichert.</p><br>
-          <p>Bist du sicher, dass du die ID verwenden möchtest?</p>
+          <p>Bist du sicher, dass du diese Speicher-ID verwenden möchtest?</p>
         </section>
         <footer class="modal-card-foot">
           <button class="button is-black is-hidden-tablet" @click="confirmed">ID verwenden</button>
